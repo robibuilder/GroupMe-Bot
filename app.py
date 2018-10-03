@@ -28,8 +28,11 @@ def webhook():
   #if used_any(KEY_WORDS):
     #msg = 'hello to you'
     #send_message(msg)
-  if 'when' in data['text'].lower():
-    msg = 'custom condition'
+  if 'texas' in data['text'].lower():
+    msg = 'Happy saxeT Week! -- Tuck Fexas'
+    send_message(msg)
+  if 'OU' in data['text'].lower():
+    msg = 'NoNoNo Boomer Sooner'
     send_message(msg)
 
   return "ok", 200
