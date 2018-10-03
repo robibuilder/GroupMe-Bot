@@ -27,6 +27,9 @@ def webhook():
 	if used_any(KEY_WORDS):
     msg = 'hello to you'
     send_message(msg)
+  elif 'when' in text:
+    msg = 'custom condition'
+    send_message(msg)
 
   return "ok", 200
 
