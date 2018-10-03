@@ -24,10 +24,11 @@ def webhook():
     ##msg = '{}, you sent "{}".'.format(data['name'], data['text'])
     #msg = 'what'
     #send_message(msg)
-	if used_any(KEY_WORDS):
-    msg = 'hello to you'
-    send_message(msg)
-  elif 'when' in data['text'].lower():
+	
+  #if used_any(KEY_WORDS):
+    #msg = 'hello to you'
+    #send_message(msg)
+  if 'when' in data['text'].lower():
     msg = 'custom condition'
     send_message(msg)
 
