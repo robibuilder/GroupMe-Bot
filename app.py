@@ -31,8 +31,7 @@ def webhook():
   if 'texas' in data['text'].lower():
     msg = 'Happy saxeT Week! -- Tuck Fexas'
     send_message(msg)
-    
-  if 'OU' in data['text'].lower():
+  elif 'ou' in data['text'].lower():
     msg = 'NoNoNo Boomer Sooner'
     send_message(msg)
 
