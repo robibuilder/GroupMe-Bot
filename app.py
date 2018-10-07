@@ -34,7 +34,7 @@ def webhook():
     #send_message(msg)
 
 i = 0;
-while i < 5:
+for i in range(len(words_list)):
   if KEY_WORDS[i] in data['text'].lower():
     msg = 'word detected: "{}"', KEY_WORDS[i].lower()
     send_message(msg)
