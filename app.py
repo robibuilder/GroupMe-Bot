@@ -33,7 +33,6 @@ def webhook():
     #msg = 'NoNoNo Boomer Sooner'
     #send_message(msg)
 
-i = 0;
 for i in range(len(words_list)):
   if KEY_WORDS[i] in data['text'].lower():
     msg = 'word detected: "{}"', KEY_WORDS[i].lower()
