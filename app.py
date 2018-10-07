@@ -33,11 +33,13 @@ def webhook():
     #msg = 'NoNoNo Boomer Sooner'
     #send_message(msg)
 
+  KEY_WORDS = ['hi', 'hello', 'yo']
+
   for i in range(len(words_list)):
     if KEY_WORDS[i] in data['text'].lower():
       msg = 'word detected: "{}"' .format(KEY_WORDS[i].lower())
       send_message(msg)
-    else
+    else:
       msg = 'you sent "{}".' .format(data['text'])
       send_message(msg)
 
