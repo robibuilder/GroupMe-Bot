@@ -64,7 +64,7 @@ def webhook():
         msg = 'fuck you'
         send_message(msg)
       elif 'baker' in data['text'].lower() or 'mayfield' in data['text'].lower():
-        msg = 'I am a slut for Baker Mayfield"
+        msg = 'I am a slut for Baker Mayfield'
         send_message(msg)
       break;
 
