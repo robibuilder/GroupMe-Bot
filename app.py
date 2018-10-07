@@ -48,25 +48,15 @@ def webhook():
 
   if switch == 1:
     if data['name'] != 'demobot56':
-      #for i in range(len(LIST_WORDS)):
-        #if LIST_WORDS[i] in data['text'].lower():
-          #msg = 'word detected'#: "{}"' .format(KEY_WORDS[i].lower())
-          #send_message(msg)
-          #break;
-        #else:
-          #msg = 'you sent "{}".' .format(data['text'])
-          #send_message(msg)
-          #break;
       if '@demobot56' in data['text'].lower():
         if 'fuck you' in data['text'].lower():
-          msg = 'I will eat you ass.'
+          msg = 'I will eat your ass.'
           send_message(msg)
         msg = 'fuck you'
         send_message(msg)
       elif 'baker' in data['text'].lower() or 'mayfield' in data['text'].lower():
         msg = 'I am a slut for Baker Mayfield'
         send_message(msg)
-      break;
 
   if data['name'] == 'Jacob Robinett' and 'command list' in data['text'].lower():
     msg = "COMMAND LIST\n[@demobot56] anything\nCommand list\n"
