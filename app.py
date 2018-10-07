@@ -39,7 +39,7 @@ def webhook():
       send_message(msg)
     else
       msg = 'you sent "{}".' .format(data['text'])
-
+      send_message(msg)
 
   return "ok", 200
 
