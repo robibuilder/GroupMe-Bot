@@ -37,7 +37,7 @@ def webhook():
 
   switch = 0
 
-  if data['name'] == 'Jacob Robinett' and 'initize bot' in data['text'].lower():
+  if data['name'] == 'Jacob Robinett' and 'initialize bot' in data['text'].lower():
     msg = "..."
     send_message(msg)
     msg = "Alec [SKYNET] bot: --ACTIVE"
