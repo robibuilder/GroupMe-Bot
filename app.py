@@ -33,15 +33,34 @@ def webhook():
     #msg = 'NoNoNo Boomer Sooner'
     #send_message(msg)
 
-  KEY_WORDS = ['hi', 'hello', 'yo']
+  LIST_WORDS = ['69', 'tinder', 'tide pod', 'tide pods']
 
-  for i in range(len(KEY_WORDS)):
-    if KEY_WORDS[i] in data['text'].lower():
-      msg = 'word detected'#: "{}"' .format(KEY_WORDS[i].lower())
-      send_message(msg)
-    else:
-      msg = 'you sent "{}".' .format(data['text'])
-      send_message(msg)
+  switch = 0
+
+  if data['name'] == 'Jacob Robinett' and 'initize bot' in data['text'].lower():
+    msg = "..."
+    send_message(msg)
+    msg = "Alec [SKYNET] bot: --ACTIVE"
+    send_message(msg)
+    msg = "good luck fuckers"
+    send_message(msg)
+    switc = 1
+
+
+  if switch == 1:
+    if data['name'] != 'demobot56':
+      for i in range(len(KEY_WORDS)):
+        if LIST_WORDS[i] in data['text'].lower():
+          msg = 'word detected'#: "{}"' .format(KEY_WORDS[i].lower())
+          send_message(msg)
+          break;
+        else:
+          msg = 'you sent "{}".' .format(data['text'])
+          send_message(msg)
+          break;
+      if '@demobot56' in data['text'].lower():
+        msg = 'fuck you'
+        send_message(msg)
 
   return "ok", 200
 
