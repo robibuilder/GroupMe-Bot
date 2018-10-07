@@ -24,15 +24,19 @@ def webhook():
     ##msg = '{}, you sent "{}".'.format(data['name'], data['text'])
     #msg = 'what'
     #send_message(msg)
-	
-  #if used_any(KEY_WORDS):
-    #msg = 'hello to you'
+
+#THIS CODE WORKS
+  #if 'texas' in data['text'].lower():
+    #msg = 'Happy saxeT Week! -- Tuck Fexas'
     #send_message(msg)
-  if 'texas' in data['text'].lower():
-    msg = 'Happy saxeT Week! -- Tuck Fexas'
-    send_message(msg)
-  elif 'ou' in data['text'].lower():
-    msg = 'NoNoNo Boomer Sooner'
+  #elif 'ou' in data['text'].lower():
+    #msg = 'NoNoNo Boomer Sooner'
+    #send_message(msg)
+
+i = 0;
+while i < 5:
+  if KEY_WORDS[i] in data['text'].lower():
+    msg = 'word detected: "{}"', KEY_WORDS[i].lower()
     send_message(msg)
 
   return "ok", 200
